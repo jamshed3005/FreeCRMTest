@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-15T07:31:20.826Z",
+        "line": 3,
+        "name": "Add new Creation",
+        "description": "",
+        "id": "new-customer-creation;add-new-creation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10593000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already login page",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.user_is_already_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of the page is Guru",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.title_of_the_page_is_Guru()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1845000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.user_enters_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "mngr246165",
+                  "uqUrepe"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 889000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on new customer tab",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.user_clicks_on_new_customer_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2318000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters customer details",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.user_enters_customer_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "customer",
+                  "Gender",
+                  "DOB",
+                  "Add",
+                  "city",
+                  "state",
+                  "pin",
+                  "mobile",
+                  "emailid",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "jamshed khan",
+                  "male",
+                  "30-05-1994",
+                  "phase1",
+                  "Pune",
+                  "Maharastra",
+                  "411057",
+                  "9513124430",
+                  "jamshed@gmail.com",
+                  "Google145"
+                ]
+              },
+              {
+                "cells": [
+                  "rahul sharma",
+                  "male",
+                  "12-12-1994",
+                  "phase2",
+                  "Delhi",
+                  "Punjab",
+                  "122065",
+                  "9876543231",
+                  "rahul@testdomain.com",
+                  "Google145"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : please fill all fields}\n  (Session info: chrome\u003d79.0.3945.130): please fill all fields\nBuild info: version: \u00274.0.0-alpha-4\u0027, revision: \u0027c2d955b49e\u0027\nSystem info: host: \u0027DESKTOP-9E5ICTO\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\\Users\\JAMSHE~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:52208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: af5f9a8505eb6fca9270fe58dc7c2d62\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027addcustomerpage.php\u0027]}\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:127)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:394)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)\r\n\tat stepDefinition.newCustomerMAP.user_clicks_submit_button(newCustomerMAP.java:88)\r\n\tat ✽.user clicks submit button(file:///C:/Users/Jamshed%20Khan/eclipse-workspace/FreeCRMBDD/src/main/java/Feature/newCustomerMAP.feature:16)\r\n",
+              "duration": 105000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "user clicks submit button",
+            "match": {
+              "location": "stepDefinition.newCustomerMAP.user_clicks_submit_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "New Customer creation",
+    "description": "",
+    "id": "new-customer-creation",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/Feature/newCustomerMAP.feature",
+    "tags": []
+  }
+]
